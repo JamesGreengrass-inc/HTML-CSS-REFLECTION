@@ -1,0 +1,91 @@
+// SASS for header on mobile /
+
+// Variable names and definition /
+
+$brsize: 3px;
+$colorfill: #ffffff;
+$l-spacing: 0.4px;
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Header ---- */
+
+
+header {
+    display: visible;
+    background-color: #FFFFFF;
+}
+
+.header-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.main-nav a {
+	text-align: center;
+	padding: 10px 15px;
+    border-radius: $brsize;
+}
+
+.main-nav a {
+	font-size: 0.95em;
+	color: $colorfill;
+	text-transform: uppercase;
+}
+
+#support-btn {
+    display: none;
+}
+
+#contact-btn {
+    /* insert icon */
+    background-color: #22242E;
+    display: visible;
+}
+
+#menu-btn {
+    background-color: #22242E;
+}
+
+.d-flex {
+    align-self: flex-end;
+}
+
+.btn {
+    /* insert icon */
+    background-color: #22242E;
+}
+
+/*CSS for mobile layout - buttons */
+
+.btn {
+    box-shadow: none;
+    border-radius: $brsize;
+    color: $colorfill;
+    display: visible;
+    .btn:hover {
+        color: $colorfill;
+    }
+}
