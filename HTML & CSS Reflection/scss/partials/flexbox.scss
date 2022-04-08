@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+
+.item {
+  color: goldenrod;
+  padding: 15px;
+  margin: 5px;
+  background: black;
+  border-radius: 3px;
+}
+
