@@ -4,18 +4,31 @@
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  align-items: center;
 }
 
 .item {
   color: goldenrod;
-  padding: 15px;
+  padding: 10px;
   margin: 5px;
+  background: black;
+  border-radius: 3px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  width: 100%;
+  align-items: center;
+}
+
+.item-search {
+  color: goldenrod;
+  padding: 10px;
+  margin: 3px;
   background: black;
   border-radius: 3px;
 }
@@ -92,6 +105,35 @@ header {
 }
 
 /* ---- Header Specific Styles ---- */
+.inner {
+  padding: 20px 0px;
+}
+
+.contained {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .contained {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contained {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .contained {
+    width: 1200px;
+  }
+}
+
 .logo {
   max-width: 100%;
   height: auto;
@@ -117,23 +159,28 @@ header {
   }
 }
 
-.contact-icon {
-  align-self: center;
+#icon-phone {
+  color: #121419;
 }
 
-.contact-icon .icon-phone_in_talk:before {
+#icon-phone #icon-phone:hover {
+  color: #121419;
+}
+
+.icon-phone_in_talk {
   font-size: 2rem;
-  color: #121429;
+  color: #121419;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-icon {
+  .icon-phone_in_talk {
     display: none;
   }
 }
 
 .mobile-search-bar {
-  width: 100%;
+  width: 99%;
 }
 
 @media screen and (min-width: 768px) {

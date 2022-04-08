@@ -1,18 +1,31 @@
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; 
+  align-items: center;
 }
 
 .item {
   color: goldenrod;
-  padding: 15px;
+  padding: 10px;
   margin: 5px;
+  background: black;
+  border-radius: 3px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  width: 100%;
+  align-items: center;
+}
+
+.item-search {
+  color: goldenrod;
+  padding: 10px;
+  margin: 3px;
   background: black;
   border-radius: 3px;
 }

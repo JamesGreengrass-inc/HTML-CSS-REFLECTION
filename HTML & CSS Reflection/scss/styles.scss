@@ -76,6 +76,25 @@ header {
 }
 
 /* ---- Header Specific Styles ---- */
+.inner {
+  padding: 20px 0px;
+}
+
+.contained {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include mQ(768px) {
+    width: 750px;
+  }
+  @include mQ(992px) {
+    width: 970px;
+  }
+  @include mQ(1260px) {
+    width: 1200px;
+  }
+}
 
 .logo {
   max-width: 100%;
@@ -96,19 +115,24 @@ header {
   }
 }
 
-.contact-icon {
-  align-self: center;
-  .icon-phone_in_talk:before {
-    font-size: 2rem;
-    color: #121429;
+#icon-phone {
+  color:#121419;
+  #icon-phone:hover {
+    color:#121419;
   }
+}
+
+.icon-phone_in_talk {
+  font-size: 2rem;
+  color: #121419;
+  margin-left: 15px;
   @include mQ(768px) {
     display: none;
   }
 }
 
 .mobile-search-bar {
-  width: 100%;
+  width: 99%;
   @include mQ(768px) {
     display: none;
   }
