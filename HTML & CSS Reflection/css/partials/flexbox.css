@@ -9,18 +9,21 @@
 .item {
   color: goldenrod;
   padding: 10px;
-  margin: 5px;
+  margin: 3px;
   background: black;
   border-radius: 3px;
 }
 
 .item-menu {
   padding: 5px 15px;
+  text-transform: uppercase;
   border-radius: 3px;
+  white-space: normal;
   height: 56px;
   color: #fff;
   background-color: #333645;
   border-color: #333645;
+  margin-left: 20px;
 }
 
 .container-two {
@@ -37,4 +40,24 @@
   margin: 3px;
   background: black;
   border-radius: 3px;
+}
+
+.search-bar-form {
+  padding: 5px 40px 5px 15px;
+  margin: 0px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
+  fill: #555;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
+}
+
+#search-submit {
+  margin: 0px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
 }
