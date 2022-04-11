@@ -1,4 +1,18 @@
 /* ================================= 
+  Important Styles
+==================================== */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+/* ================================= 
+  Importing Partials
+==================================== */
+/* ================================= 
   Mixins
 ==================================== */
 .container {
@@ -15,6 +29,15 @@
   margin: 5px;
   background: black;
   border-radius: 3px;
+}
+
+.item-menu {
+  padding: 5px 15px;
+  border-radius: 3px;
+  height: 56px;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
 }
 
 .container-two {
@@ -86,10 +109,6 @@
 /* ================================= 
   Base Page Styles
 ==================================== */
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
@@ -149,6 +168,12 @@ header {
   }
 }
 
+.icon-mouse, .icon-paperplane {
+  margin-right: 5px;
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+
 .search-bar {
   display: none;
 }
@@ -159,12 +184,21 @@ header {
   }
 }
 
-#icon-phone {
-  color: #121419;
+#icon-phone:link {
+  text-decoration: none;
 }
 
-#icon-phone #icon-phone:hover {
+#icon-phone:visited {
+  text-decoration: none;
+}
+
+#icon-phone:hover {
   color: #121419;
+  text-decoration: underline;
+}
+
+#icon-phone:active {
+  text-decoration: none;
 }
 
 .icon-phone_in_talk {
@@ -177,6 +211,20 @@ header {
   .icon-phone_in_talk {
     display: none;
   }
+}
+
+.item-menu:hover {
+  background-color: #22242E;
+  border-color: #22242E;
+}
+
+.title {
+  display: block;
+  font-size: .75rem;
+  line-height: 1;
+  position: bottom;
+  top: 5px;
+  margin-bottom: 0;
 }
 
 .mobile-search-bar {

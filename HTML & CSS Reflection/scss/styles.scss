@@ -1,4 +1,18 @@
-// Importing partials /
+/* ================================= 
+  Important Styles
+==================================== */
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.pull-left {
+  float: left!important;
+}
+
+/* ================================= 
+  Importing Partials
+==================================== */
 
 @import 'partials/mixins.scss',
         'partials/flexbox.scss';
@@ -57,10 +71,6 @@
   Base Page Styles
 ==================================== */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
@@ -108,6 +118,12 @@ header {
   }
 }
 
+.icon-mouse, .icon-paperplane {
+  margin-right: 5px;
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+
 .search-bar {
   display: none;
   @include mQ(768px) {
@@ -115,11 +131,21 @@ header {
   }
 }
 
-#icon-phone {
-  color:#121419;
-  #icon-phone:hover {
-    color:#121419;
-  }
+#icon-phone:link {
+  text-decoration: none;
+}
+
+#icon-phone:visited {
+  text-decoration: none;
+}
+
+#icon-phone:hover {
+  color: #121419;
+  text-decoration: underline;
+}
+
+#icon-phone:active {
+  text-decoration: none;
 }
 
 .icon-phone_in_talk {
@@ -129,6 +155,20 @@ header {
   @include mQ(768px) {
     display: none;
   }
+}
+
+.item-menu:hover {
+  background-color: #22242E;
+  border-color: #22242E;
+}
+
+.title {
+  display: block;
+  font-size: .75rem;
+  line-height: 1;
+  position: bottom;
+  top: 5px;
+  margin-bottom: 0;
 }
 
 .mobile-search-bar {
