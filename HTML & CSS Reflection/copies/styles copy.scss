@@ -176,43 +176,72 @@ header {
 }
 
 .mobile-search-bar {
+  width: 99%;
   @include mQ(768px) {
     display: none;
   }
 }
 
 .search-bar-form-control, output {
+  display: block;
   font-size: 14px;
+  line-height: 1.42857143;
   color: #555;
 }
 
 .search-bar-form-control {
+  background-image: none;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px #00000014;
   height: 47px;
   padding: 5px 15px;
+  width: 100%;
 }
 
 .search-bar-form-control {
   border-color: #ccc;
 }
 
+.search-bar-form-control,
 .search-bar-form {
+  display: inline-block;
+}
+
+.search-bar-form {
+  margin: 0px;
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid hsla(0, 0%, 100%, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
   padding-right: 40px;
+}
+
+button {
+  overflow: visible;
 }
 
 #search-submit {
   background: none;
   border: none;
   color: #333645;
+  position: absolute;
+  right: 5px;
   line-height: 47px;
   outline: none;
 }
 
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: Glyphicons Halflings;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
 
 .icon-magnifying-glass {
   font-size: 30px;
@@ -220,22 +249,4 @@ header {
 
 .spare {
   box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
-  /* search bar form control, output */
-  line-height: 1.42857143;
-  /* search bar form control 1 */
-  background-image: none;
-  height: 47px;
-  /* search bar form */
-  width: 80%;
-  margin: 0px;
-  transition: none;
-  button {
-  overflow: visible;
-  }
-  /* search submit */
-  width: 20%;
-  position: absolute;
-  right: 5px;
-  /* mobile search bar */
-  width: 100%;
 }

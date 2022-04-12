@@ -1,9 +1,26 @@
+/* ================================= 
+  Importing Partials
+==================================== */
+/* ================================= 
+  Mixins
+==================================== */
+/* ================================= 
+  Flexbox Styles
+==================================== */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   align-items: center;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 .item {
@@ -29,9 +46,10 @@
 .container-two {
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
-  width: 100%;
+  flex-wrap: nowrap;
   align-items: center;
+  margin-top: 11px;
+  white-space: nowrap;
 }
 
 .item-search {
@@ -42,22 +60,7 @@
   border-radius: 3px;
 }
 
-.search-bar-form {
-  padding: 5px 40px 5px 15px;
-  margin: 0px;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
-  fill: #555;
-  border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  transition: none;
+.spare-two {
+  /* container-two */
   width: 100%;
-}
-
-#search-submit {
-  margin: 0px;
-  padding: 2px;
-  border: none;
-  background-color: transparent;
 }

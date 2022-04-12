@@ -1,33 +1,71 @@
 /* ================================= 
   Important Styles
 ==================================== */
-
 *, :after, :before {
   box-sizing: border-box;
 }
 
 .pull-left {
-  float: left!important;
+  float: left !important;
 }
 
 /* ================================= 
   Importing Partials
 ==================================== */
+/* ================================= 
+  Mixins
+==================================== */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
 
-@import 'partials/mixins.scss',
-        'partials/flexbox.scss';
+.item {
+  color: goldenrod;
+  padding: 10px;
+  margin: 3px;
+  background: black;
+  border-radius: 3px;
+}
+
+.item-menu {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+  height: 56px;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+  margin-left: 20px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  width: 100%;
+  align-items: center;
+}
+
+.item-search {
+  color: goldenrod;
+  padding: 10px;
+  margin: 3px;
+  background: black;
+  border-radius: 3px;
+}
 
 /* ================================= 
   Font Styles
 ==================================== */
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../assets/fonts/icomoon.eot?35lt8l');
-  src:  url('../assets/fonts/icomoon.eot?35lt8l#iefix') format('embedded-opentype'),
-    url('../assets/fonts/icomoon.ttf?35lt8l') format('truetype'),
-    url('../assets/fonts/icomoon.woff?35lt8l') format('woff'),
-    url('../assets/fonts/icomoon.svg?35lt8l#icomoon') format('svg');
+  src: url("../assets/fonts/icomoon.eot?35lt8l");
+  src: url("../assets/fonts/icomoon.eot?35lt8l#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon.ttf?35lt8l") format("truetype"), url("../assets/fonts/icomoon.woff?35lt8l") format("woff"), url("../assets/fonts/icomoon.svg?35lt8l#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -42,7 +80,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,30 +88,34 @@
 .icon-paperplane:before {
   content: "\e900";
 }
+
 .icon-send:before {
   content: "\e900";
 }
+
 .icon-flight:before {
   content: "\e900";
 }
+
 .icon-email:before {
   content: "\e900";
 }
+
 .icon-phone_in_talk:before {
   content: "\e901";
 }
+
 .icon-mouse:before {
   content: "\e902";
 }
+
 .icon-magnifying-glass:before {
   content: "\e903";
 }
 
-
 /* ================================= 
   Base Page Styles
 ==================================== */
-
 body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
@@ -99,13 +140,22 @@ header {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  @include mQ(768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .contained {
     width: 750px;
   }
-  @include mQ(992px) {
+}
+
+@media screen and (min-width: 992px) {
+  .contained {
     width: 970px;
   }
-  @include mQ(1260px) {
+}
+
+@media screen and (min-width: 1260px) {
+  .contained {
     width: 1200px;
   }
 }
@@ -117,7 +167,10 @@ header {
 
 .support, .contact {
   display: none;
-  @include mQ(992px) {
+}
+
+@media screen and (min-width: 992px) {
+  .support, .contact {
     display: flex;
   }
 }
@@ -130,7 +183,10 @@ header {
 
 .search-bar {
   display: none;
-  @include mQ(768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .search-bar {
     display: flex;
   }
 }
@@ -156,7 +212,10 @@ header {
   font-size: 2rem;
   color: #121419;
   margin-left: 15px;
-  @include mQ(768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .icon-phone_in_talk {
     display: none;
   }
 }
@@ -176,43 +235,75 @@ header {
 }
 
 .mobile-search-bar {
-  @include mQ(768px) {
+  width: 99%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-search-bar {
     display: none;
   }
 }
 
 .search-bar-form-control, output {
+  display: block;
   font-size: 14px;
+  line-height: 1.42857143;
   color: #555;
 }
 
 .search-bar-form-control {
+  background-image: none;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px #00000014;
   height: 47px;
   padding: 5px 15px;
+  width: 100%;
 }
 
 .search-bar-form-control {
   border-color: #ccc;
 }
 
+.search-bar-form-control,
 .search-bar-form {
+  display: inline-block;
+}
+
+.search-bar-form {
+  margin: 0px;
   background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid hsla(0, 0%, 100%, 0.2);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
   padding-right: 40px;
+}
+
+button {
+  overflow: visible;
 }
 
 #search-submit {
   background: none;
   border: none;
   color: #333645;
+  position: absolute;
+  right: 5px;
   line-height: 47px;
   outline: none;
 }
 
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: Glyphicons Halflings;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
 
 .icon-magnifying-glass {
   font-size: 30px;
@@ -220,22 +311,4 @@ header {
 
 .spare {
   box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
-  /* search bar form control, output */
-  line-height: 1.42857143;
-  /* search bar form control 1 */
-  background-image: none;
-  height: 47px;
-  /* search bar form */
-  width: 80%;
-  margin: 0px;
-  transition: none;
-  button {
-  overflow: visible;
-  }
-  /* search submit */
-  width: 20%;
-  position: absolute;
-  right: 5px;
-  /* mobile search bar */
-  width: 100%;
 }

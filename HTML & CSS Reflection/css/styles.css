@@ -15,12 +15,29 @@
 /* ================================= 
   Mixins
 ==================================== */
+/* ================================= 
+  Importing Partials
+==================================== */
+/* ================================= 
+  Mixins
+==================================== */
+/* ================================= 
+  Flexbox Styles
+==================================== */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   align-items: center;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 .item {
@@ -46,9 +63,10 @@
 .container-two {
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
-  width: 100%;
+  flex-wrap: nowrap;
   align-items: center;
+  margin-top: 11px;
+  white-space: nowrap;
 }
 
 .item-search {
@@ -59,24 +77,9 @@
   border-radius: 3px;
 }
 
-.search-bar-form {
-  padding: 5px 40px 5px 15px;
-  margin: 0px;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
-  fill: #555;
-  border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  transition: none;
+.spare-two {
+  /* container-two */
   width: 100%;
-}
-
-#search-submit {
-  margin: 0px;
-  padding: 2px;
-  border: none;
-  background-color: transparent;
 }
 
 /* ================================= 
@@ -254,12 +257,67 @@ header {
   margin-bottom: 0;
 }
 
-.mobile-search-bar {
-  width: 99%;
-}
-
 @media screen and (min-width: 768px) {
   .mobile-search-bar {
     display: none;
   }
+}
+
+.search-bar-form-control, output {
+  font-size: 14px;
+  color: #555;
+}
+
+.search-bar-form-control {
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px #00000014;
+  height: 47px;
+  padding: 5px 15px;
+}
+
+.search-bar-form-control {
+  border-color: #ccc;
+}
+
+.search-bar-form {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding-right: 40px;
+}
+
+#search-submit {
+  background: none;
+  border: none;
+  color: #333645;
+  line-height: 47px;
+  outline: none;
+}
+
+.icon-magnifying-glass {
+  font-size: 30px;
+}
+
+.spare {
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
+  /* search bar form control, output */
+  line-height: 1.42857143;
+  /* search bar form control 1 */
+  background-image: none;
+  height: 47px;
+  /* search bar form */
+  width: 80%;
+  margin: 0px;
+  transition: none;
+  /* search submit */
+  width: 20%;
+  position: absolute;
+  right: 5px;
+  /* mobile search bar */
+  width: 100%;
+}
+
+.spare button {
+  overflow: visible;
 }
