@@ -21,16 +21,12 @@
   }
 }
 
-.logo-container,
-.actions-container {
-  padding: 0px 15px;
-}
-
-.actions-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+.item {
+  color: goldenrod;
+  padding: 10px;
+  margin: 3px;
+  background: black;
+  border-radius: 3px;
 }
 
 .item-menu {

@@ -1,5 +1,5 @@
 /* ================================= 
-  Important Styles
+  Important Styles - Styles.scss
 ==================================== */
 
 *, :after, :before {
@@ -11,14 +11,14 @@
 }
 
 /* ================================= 
-  Importing Partials
+  Importing Partials - Styles.scss
 ==================================== */
 
 @import 'partials/mixins.scss',
         'partials/flexbox.scss';
 
 /* ================================= 
-  Font Styles
+  Font Styles - Styles.scss
 ==================================== */
 
 @font-face {
@@ -72,7 +72,7 @@
 
 
 /* ================================= 
-  Base Page Styles
+  Base Page Styles - Styles.scss
 ==================================== */
 
 body {
@@ -120,6 +120,76 @@ header {
   @include mQ(992px) {
     display: flex;
   }
+}
+
+.support {
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  user-select: none;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  .support:hover {
+    color: #fff;
+    background-color: #2A6EC6;
+    border-color: #2A6EC6;
+  }
+}
+
+.search-bar-input {
+  font-size: 14px;
+  color: #555;
+}
+
+.search-bar-input {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  box-shadow: inset 0 1px 1px #00000013;
+}
+
+.search-bar-input {
+  padding: 15px 5px;
+  border-color: #ccc;
+  height: 56px;
+  @include mQ(768px) {
+    border-radius: 0px;
+    width: 174px;
+  }
+  @include mQ(992px) {
+    display: none;
+    width: 300px;
+  }
+  @include mQ(1260px) {
+    display: flex;
+    width: 240px;
+    border-radius: 0px;
+  }
+}
+
+.search-bar-button {
+  outline: none;
+  padding: 7px 20px 3px;
+  height: 56px;
+  font-size: 1.063rem;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  vertical-align: bottom;
+  background-color: #999aa2;
+  color: #fff;
 }
 
 .icon-mouse, .icon-paperplane {
@@ -175,18 +245,19 @@ header {
   margin-bottom: 0;
 }
 
-.mobile-search-bar {
+.mob-search-container {
+  margin-top: 11px;
   @include mQ(768px) {
     display: none;
   }
 }
 
-.search-bar-form-control, output {
+.mob-search-bar-form-control, output {
   font-size: 14px;
   color: #555;
 }
 
-.search-bar-form-control {
+.mob-search-bar-form-control {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px #00000014;
@@ -194,28 +265,31 @@ header {
   padding: 5px 15px;
 }
 
-.search-bar-form-control {
+.mob-search-bar-form-control {
   border-color: #ccc;
 }
 
-.search-bar-form {
+.mob-search-bar-form {
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid hsla(0, 0%, 100%, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
   padding-right: 40px;
+  width: 100%;
 }
 
-#search-submit {
+.mob-search-button {
   background: none;
   border: none;
   color: #333645;
+  position: absolute;
+  right: 16px;
   line-height: 47px;
   outline: none;
 }
 
-
 .icon-magnifying-glass {
-  font-size: 30px;
+  font-size: 25px;
+  vertical-align: middle;
 }
 
 .spare {
@@ -229,13 +303,15 @@ header {
   width: 80%;
   margin: 0px;
   transition: none;
-  button {
+  .spare > button {
   overflow: visible;
   }
-  /* search submit */
+  /* search submit 1 */
   width: 20%;
   position: absolute;
   right: 5px;
+  background: none;
+  line-height: 47px;
   /* mobile search bar */
   width: 100%;
 }
