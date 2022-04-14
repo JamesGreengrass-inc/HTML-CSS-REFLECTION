@@ -52,18 +52,6 @@
   align-items: center;
 }
 
-.item-menu {
-  padding: 5px 15px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  white-space: normal;
-  height: 56px;
-  color: #fff;
-  background-color: #333645;
-  border-color: #333645;
-  margin-left: 20px;
-}
-
 .container-two {
   display: flex;
   flex-direction: row;
@@ -79,11 +67,6 @@
   margin: 3px;
   background: black;
   border-radius: 3px;
-}
-
-.spare-two {
-  /* container-two */
-  width: 100%;
 }
 
 /* ================================= 
@@ -202,7 +185,7 @@ header {
   }
 }
 
-.support {
+.support, .contact {
   margin-bottom: 0;
   font-weight: 400;
   text-align: center;
@@ -217,17 +200,32 @@ header {
   border-radius: 3px;
   white-space: normal;
   color: #fff;
-  background-color: #4183d7;
-  border-color: #4183d7;
   height: 56px;
   line-height: 46px;
   font-size: 1.125rem;
 }
 
-.support .support:hover {
+.support {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.contact {
+  background-color: #999aa2;
+  border-color: #999aa2;
+  margin: 0px 20px;
+}
+
+.support:hover {
   color: #fff;
   background-color: #2A6EC6;
   border-color: #2A6EC6;
+}
+
+.contact:hover {
+  color: #fff;
+  background-color: #84858F;
+  border-color: #84858F;
 }
 
 .search-bar-input {
@@ -275,11 +273,16 @@ header {
   padding: 7px 20px 3px;
   height: 56px;
   font-size: 1.063rem;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
   border: none;
   vertical-align: bottom;
   background-color: #999aa2;
   color: #fff;
+}
+
+.search-bar-button:hover {
+  background-color: #7E808A;
+  border-color: #7E808A;
 }
 
 .icon-mouse, .icon-paperplane {
@@ -325,6 +328,18 @@ header {
   .icon-phone_in_talk {
     display: none;
   }
+}
+
+.item-menu {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+  height: 56px;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+  margin-left: 20px;
 }
 
 .item-menu:hover {
@@ -389,29 +404,4 @@ header {
 .icon-magnifying-glass {
   font-size: 25px;
   vertical-align: middle;
-}
-
-.spare {
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 1px 0px inset;
-  /* search bar form control, output */
-  line-height: 1.42857143;
-  /* search bar form control 1 */
-  background-image: none;
-  height: 47px;
-  /* search bar form */
-  width: 80%;
-  margin: 0px;
-  transition: none;
-  /* search submit 1 */
-  width: 20%;
-  position: absolute;
-  right: 5px;
-  background: none;
-  line-height: 47px;
-  /* mobile search bar */
-  width: 100%;
-}
-
-.spare .spare > button {
-  overflow: visible;
 }

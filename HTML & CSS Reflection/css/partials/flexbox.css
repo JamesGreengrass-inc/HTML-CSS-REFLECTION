@@ -35,18 +35,6 @@
   align-items: center;
 }
 
-.item-menu {
-  padding: 5px 15px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  white-space: normal;
-  height: 56px;
-  color: #fff;
-  background-color: #333645;
-  border-color: #333645;
-  margin-left: 20px;
-}
-
 .container-two {
   display: flex;
   flex-direction: row;
@@ -62,9 +50,4 @@
   margin: 3px;
   background: black;
   border-radius: 3px;
-}
-
-.spare-two {
-  /* container-two */
-  width: 100%;
 }
