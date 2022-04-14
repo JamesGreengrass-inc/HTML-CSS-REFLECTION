@@ -327,3 +327,26 @@ header {
   font-size: 25px;
   vertical-align: middle;
 }
+
+/* ---- Banner Specific Styles ---- */
+
+.item {
+  object-fit: cover;
+  background-color: #000;
+}
+
+.img-cover-modern-container {
+  color: #fff;
+  object-fit: cover;
+  @include mQMax(991px) {
+    text-align: center;
+  }
+}
+
+.img-cover-modern {
+  max-width: 100%;
+  height: auto;
+  @include mQMax(991px) {
+    opacity: .5;
+  }
+}

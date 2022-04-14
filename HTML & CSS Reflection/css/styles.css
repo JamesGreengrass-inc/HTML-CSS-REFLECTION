@@ -24,6 +24,7 @@
 /* ================================= 
   Flexbox Styles - Flexbox.scss
 ==================================== */
+/* ---- Header Specific Styles ---- */
 .container {
   display: flex;
   flex-direction: row;
@@ -52,21 +53,18 @@
   align-items: center;
 }
 
-.container-two {
+/* ---- Banner Specific Styles ---- */
+.banner-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-top: 11px;
-  white-space: nowrap;
+  flex-direction: column;
+  height: 740px;
+  width: 1910px;
 }
 
-.item-search {
-  color: goldenrod;
-  padding: 10px;
-  margin: 3px;
-  background: black;
-  border-radius: 3px;
+#banner {
+  object-fit: cover;
+  border-top: 1px solid rgba(51, 54, 69, 0.5);
+  flex: 1 0 auto;
 }
 
 /* ================================= 
@@ -404,4 +402,32 @@ header {
 .icon-magnifying-glass {
   font-size: 25px;
   vertical-align: middle;
+}
+
+/* ---- Banner Specific Styles ---- */
+.item {
+  object-fit: cover;
+  background-color: #000;
+}
+
+.img-cover-modern-container {
+  color: #fff;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .img-cover-modern-container {
+    text-align: center;
+  }
+}
+
+.img-cover-modern {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .img-cover-modern {
+    opacity: .5;
+  }
 }
