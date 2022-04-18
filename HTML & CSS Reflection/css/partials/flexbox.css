@@ -7,35 +7,20 @@
 /* ================================= 
   Flexbox Styles - Flexbox.scss
 ==================================== */
-/* ---- Header Specific Styles ---- */
-.container {
+.page-parent {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+}
+
+.full-page {
   width: 100%;
-  align-items: center;
-  margin: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-}
-
-.logo-container,
-.actions-container {
-  padding: 0px 15px;
-}
-
-.actions-container {
+  height: 100vh;
+  min-height: 700px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-direction: column;
 }
 
+/* ---- Header Specific Styles ---- */
 /* ---- Banner Specific Styles ---- */
 .banner-container {
   display: flex;

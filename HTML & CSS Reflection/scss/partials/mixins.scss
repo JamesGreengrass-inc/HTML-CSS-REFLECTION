@@ -3,13 +3,13 @@
 ==================================== */
 
 @mixin mQ($arg) {
-    @media screen and (min-width: $arg) {
+    @media (min-width: $arg) {
         @content;        
     }
 }
 
 @mixin mQMax($arg) {
-  @media screen and (max-width: $arg) {
+  @media (max-width: $arg) {
       @content;        
   }
 }
