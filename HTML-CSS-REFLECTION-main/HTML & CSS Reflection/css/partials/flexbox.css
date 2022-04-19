@@ -1,13 +1,12 @@
 /* ================================= 
   Importing Partials - Flexbox.scss
 ==================================== */
-
-@import 'mixins.scss';
-
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
 /* ================================= 
   Flexbox Styles - Flexbox.scss
 ==================================== */
-
 .page-parent {
   display: flex;
   flex-direction: row;
@@ -21,22 +20,43 @@
   flex-direction: column;
 }
 
-
-
-
-
 /* ---- Header Specific Styles ---- */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+.logo-container,
+.actions-container {
+  padding: 0px 15px;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
 /* ---- Banner Specific Styles ---- */
-
 .banner-container {
   display: flex;
   flex-direction: column;
 }
 
 #banner {
-  border-top: 1px solid rgba(51,54,69,.5);
+  border-top: 1px solid rgba(51, 54, 69, 0.5);
   flex: 1 0 auto;
   position: relative;
   width: auto;
@@ -54,4 +74,8 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+#middle {
+  position: relative;
 }
