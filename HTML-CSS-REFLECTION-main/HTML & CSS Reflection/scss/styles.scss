@@ -153,45 +153,6 @@ header {
   line-height: 50px;
 }
 
-.btn>i {
-  line-height: 35px;
-  font-style: normal;
-}
-
-.btn.btn-lg>i {
-  line-height: 50px;
-}
-
-.btn>i.pull-right {
-  margin-right: -4px;
-  margin-left: 12px;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
-.h1, .h2, .h3,
-h1, h2, h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.h1, h1 {
-  font-size: 36px;
-}
-
-.h1, h1 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin: 0 0 28px;
-  color: #333645
-}
-
 a {
   background: transparent;
 }
@@ -498,36 +459,25 @@ p {
 
 /* ---- Banner Specific Styles ---- */
 
-.sliding {
-  z-index: 1;
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  height: 100%;
-  margin-right: 0px;
-}
-
 .text-banner {
-  background-color: #000;
+  position: relative;
+  background: linear-gradient(270deg,transparent 25%,rgb(0, 0, 0));
   width: 100%;
   height: 100%;
+  z-index: 2;
+}
+
+.img-cover-modern {
+  object-fit: cover;
+  overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  z-index: 3;
+  @include mQMax(992px) {
+    opacity: .3;
+  }
 }
 
 .text-banner>* {
@@ -550,36 +500,23 @@ p {
   margin: 0 0 35px;
 }
 
-.img-cover-modern-container {
-  height: 100%;
-  background: linear-gradient(270deg,transparent 25%,rgb(0, 0, 0));
-}
-
-.img-cover-modern {
-  display: block;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  opacity: .6;
-  @include mQMax(992px) {
-    opacity: .3;
-  }
-}
-
-.cont-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  @include mQ(768px) {
-    width: 750px;
-  }
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
   @include mQ(992px) {
-    width: 970px;
-  }
-  @include mQ(1260px) {
-    width: 1200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 20px;
+    align-items: baseline;
   }
 }
 
@@ -595,6 +532,10 @@ p {
   border-color: #566C88;
 }
 
+.icon-arrow-right{
+  line-height: 56px;
+  vertical-align: middle;
+}
 
 // Middle - Container Section 1
 
