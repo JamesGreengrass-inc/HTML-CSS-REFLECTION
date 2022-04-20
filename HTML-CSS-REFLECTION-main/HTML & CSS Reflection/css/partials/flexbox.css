@@ -1,0 +1,62 @@
+/* ================================= 
+  Importing Partials - Flexbox.scss
+==================================== */
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+  Flexbox Styles - Flexbox.scss
+==================================== */
+/* ---- Header Specific Styles ---- */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.mob-search-container {
+  margin: 11px 33px 21px 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-search-container {
+    display: none;
+  }
+}
+
+/* ---- Banner Specific Styles ---- */
+#banner {
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#middle {
+  position: relative;
+}
