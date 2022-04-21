@@ -50,7 +50,6 @@
 
 /* ---- Banner Specific Styles ---- */
 #banner {
-  position: absolute;
   background-color: #000;
   height: 100%;
   width: 100%;
@@ -58,8 +57,54 @@
 }
 
 #middle {
-  position: relative;
+  display: block;
   background-color: #fff;
-  width: 1690px;
-  height: 2678px;
+  width: auto;
+  height: auto;
+}
+
+.three-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 992px) {
+  .three-blocks {
+    flex-wrap: nowrap;
+  }
+}
+
+#mid-block {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  #mid-block {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+.four-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.four-blocks > a {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .four-blocks > a {
+    width: 48.5%;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .four-blocks > a {
+    width: 23%;
+  }
 }

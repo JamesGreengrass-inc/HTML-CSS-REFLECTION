@@ -42,7 +42,6 @@
 
 
 #banner {
-  position: absolute;
   background-color: #000;
   height: 100%;
   width: 100%;
@@ -52,8 +51,43 @@
 // Middle specific styles
 
 #middle {
-  position: relative;
+  display: block;
   background-color: #fff;
-  width: 1690px;
-  height: 2678px;
+  width: auto;
+  height: auto;
+}
+
+.three-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include mQ(992px) {
+    flex-wrap: nowrap;
+  }
+}
+
+#mid-block {
+  width: 100%;
+  @include mQ(992px) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+.four-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.four-blocks > a {
+  width: 100%;
+  @include mQ(768px) {
+    width: 48.5%;
+  }
+  @include mQ(1260px) {
+    width: 23%;
+
+  }
 }
