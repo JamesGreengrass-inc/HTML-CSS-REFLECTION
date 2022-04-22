@@ -88,22 +88,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 992px) {
-  .three-blocks {
-    flex-wrap: nowrap;
-  }
-}
-
-#mid-block {
+.three-blocks > a {
   width: 100%;
 }
 
 @media screen and (min-width: 992px) {
-  #mid-block {
-    margin-right: 30px;
-    margin-left: 30px;
+  .three-blocks > a {
+    width: 31%;
   }
 }
 
@@ -524,6 +518,12 @@ p {
   border-color: #333645;
 }
 
+.btn.hamburger.btn-primary:hover {
+  color: #fff;
+  background-color: #22242E;
+  border-color: #22242E;
+}
+
 .hamburger-box {
   width: 33px;
   height: 19px;
@@ -730,24 +730,25 @@ p {
 
 @media screen and (min-width: 768px) {
   .mid-block-container {
-    width: 100%;
+    width: 750px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .mid-block-container {
-    width: 100%;
+    width: 970px;
   }
 }
 
 @media screen and (min-width: 1260px) {
   .mid-block-container {
-    width: 100%;
+    width: 1200px;
   }
 }
 
 .section {
   padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .block {
@@ -818,4 +819,79 @@ p {
   color: #fff;
   background-color: #926FB1;
   border-color: #926FB1;
+}
+
+.block-one:hover {
+  color: #fff;
+  background-color: #67809F;
+  border-color: #67809F;
+}
+
+.block-one:hover .icon, .block-one:hover .btn {
+  color: #67809F;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-two:hover {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.block-two:hover .icon, .block-two:hover .btn {
+  color: #4183d7;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-three:hover {
+  color: #fff;
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+}
+
+.block-three:hover .icon, .block-three:hover .btn {
+  color: #2ECC71;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-four:hover {
+  color: #fff;
+  background-color: #D64541;
+  border-color: #D64541;
+}
+
+.block-four:hover .icon, .block-four:hover .btn {
+  color: #D64541;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-five:hover,
+.block-seven:hover {
+  color: #fff;
+  background-color: #926FB1;
+  border-color: #926FB1;
+}
+
+.block-five:hover .icon, .block-five:hover .btn,
+.block-seven:hover .icon,
+.block-seven:hover .btn {
+  color: #926FB1;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-six:hover {
+  color: #fff;
+  background-color: #F62459;
+  border-color: #F62459;
+}
+
+.block-six:hover .icon, .block-six:hover .btn {
+  color: #F62459;
+  background-color: #fff;
+  border-color: #fff;
 }
