@@ -1,13 +1,15 @@
 /* ================================= 
   Importing Partials - Flexbox.scss
 ==================================== */
-/* ================================= 
-  Mixins - Mixins.scss
-==================================== */
+
+@import 'mixins.scss';
+
 /* ================================= 
   Flexbox Styles - Flexbox.scss
 ==================================== */
+
 /* ---- Header Specific Styles ---- */
+
 .container {
   display: flex;
   flex-direction: row;
@@ -18,43 +20,44 @@
   margin-top: 0px;
   margin-bottom: 20px;
   margin-right: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
+  @include mQ(768px) {
     width: 100%;
   }
-}
-
-@media screen and (min-width: 992px) {
-  .container {
+  @include mQ(992px) {
     width: 100%;
   }
-}
-
-@media screen and (min-width: 1260px) {
-  .container {
+  @include mQ(1260px) {
     width: 100%;
   }
 }
 
 .mob-search-container {
   margin: 11px 33px 21px 33px;
-}
-
-@media screen and (min-width: 768px) {
-  .mob-search-container {
+  @include mQ(768px) {
     display: none;
   }
 }
 
+/* ---- Main Navigation Specific Styles ---- */
+
+.main-navigation .main-nav-container > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+
 /* ---- Banner Specific Styles ---- */
+
+
 #banner {
   background-color: #000;
   height: 100%;
   width: 100%;
   z-index: 1;
 }
+
+/* ---- Middle Specific Styles ---- */
 
 #middle {
   display: block;
@@ -72,10 +75,7 @@
 
 .three-blocks > a {
   width: 100%;
-}
-
-@media screen and (min-width: 992px) {
-  .three-blocks > a {
+  @include mQ(992px) {
     width: 31%;
   }
 }
@@ -89,16 +89,10 @@
 
 .four-blocks > a {
   width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .four-blocks > a {
+  @include mQ(768px) {
     width: 48.5%;
   }
-}
-
-@media screen and (min-width: 1260px) {
-  .four-blocks > a {
+  @include mQ(1260px) {
     width: 23%;
   }
 }

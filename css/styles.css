@@ -69,6 +69,14 @@
   }
 }
 
+/* ---- Main Navigation Specific Styles ---- */
+.main-navigation .main-nav-container > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+
 /* ---- Banner Specific Styles ---- */
 #banner {
   background-color: #000;
@@ -77,6 +85,7 @@
   z-index: 1;
 }
 
+/* ---- Middle Specific Styles ---- */
 #middle {
   display: block;
   background-color: #fff;
@@ -633,6 +642,90 @@ p {
   vertical-align: middle;
 }
 
+/* ---- Main Navigation Specific Styles ---- */
+.main-navigation {
+  background-color: #333645;
+  height: 99.01px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .main-navigation {
+    display: none;
+  }
+}
+
+.main-nav-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav-container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-nav-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .main-nav-container {
+    width: 1200px;
+  }
+}
+
+.main-navigation .main-nav-container > ul > li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.main-navigation .main-nav-container > ul > li > a {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.main-navigation .main-nav-container > ul > li > a > span {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.438rem;
+}
+
+.main-navigation .main-nav-container > ul > li.software > a > span {
+  color: #67809f;
+}
+
+.main-navigation .main-nav-container > ul > li.it > a > span {
+  color: #4183d7;
+}
+
+.main-navigation .main-nav-container > ul > li.digital > a > span {
+  color: #2ecc71;
+}
+
+.main-navigation .main-nav-container > ul > li.telecoms > a > span {
+  color: #2ecc71;
+}
+
+.main-navigation .main-nav-container > ul > li > a > small {
+  display: block;
+  font-size: .625rem;
+  padding-bottom: 1px;
+}
+
 /* ---- Banner Specific Styles ---- */
 .text-banner {
   position: relative;
@@ -721,6 +814,7 @@ p {
   vertical-align: middle;
 }
 
+/* ---- Middle Specific Styles ---- */
 .mid-block-container {
   margin-right: auto;
   margin-left: auto;
