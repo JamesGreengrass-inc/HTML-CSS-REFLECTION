@@ -1,0 +1,248 @@
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Service Card Styles
+==================================== */
+/* ---- Middle Specific Styles ---- */
+.service {
+  position: relative;
+  z-index: 1;
+}
+
+.middle-background {
+  background-color: white;
+}
+
+.middle-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sc-container {
+  padding: 30px 15px 50px 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .sc-container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sc-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .sc-container {
+    width: 1200px;
+  }
+}
+
+.sc-grid-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 992px) {
+  .sc-grid-one {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+  }
+}
+
+.sc-grid-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .sc-grid-two {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .sc-grid-two {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.block {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: 0 3px 35px #0000001a;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.block .icon {
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 17px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 18px;
+}
+
+.block h2 {
+  display: block;
+  position: relative;
+  padding-bottom: 17px;
+  margin-top: 0px;
+  margin-bottom: 11px;
+}
+
+.block h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  display: block;
+  background-color: #333645;
+}
+
+.block p {
+  margin-bottom: 13px;
+}
+
+.block .icon span {
+  font-size: 23px;
+  vertical-align: middle;
+}
+
+.btn-soft {
+  color: #fff;
+  background-color: #67809F;
+  border-color: #67809F;
+}
+
+.btn-s-two {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.btn-dm {
+  color: #fff;
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+}
+
+.btn-t {
+  color: #fff;
+  background-color: #D64541;
+  border-color: #D64541;
+}
+
+.btn-wd {
+  color: #fff;
+  background-color: #926FB1;
+  border-color: #926FB1;
+}
+
+.btn-cs {
+  color: #fff;
+  background-color: #F62459;
+  border-color: #F62459;
+}
+
+.btn-dt {
+  color: #fff;
+  background-color: #926FB1;
+  border-color: #926FB1;
+}
+
+.block-one:hover {
+  color: #fff;
+  background-color: #67809F;
+  border-color: #67809F;
+}
+
+.block-one:hover .icon, .block-one:hover .btn {
+  color: #67809F;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-two:hover {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.block-two:hover .icon, .block-two:hover .btn {
+  color: #4183d7;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-three:hover {
+  color: #fff;
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+}
+
+.block-three:hover .icon, .block-three:hover .btn {
+  color: #2ECC71;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-four:hover {
+  color: #fff;
+  background-color: #D64541;
+  border-color: #D64541;
+}
+
+.block-four:hover .icon, .block-four:hover .btn {
+  color: #D64541;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-five:hover,
+.block-seven:hover {
+  color: #fff;
+  background-color: #926FB1;
+  border-color: #926FB1;
+}
+
+.block-five:hover .icon, .block-five:hover .btn,
+.block-seven:hover .icon,
+.block-seven:hover .btn {
+  color: #926FB1;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.block-six:hover {
+  color: #fff;
+  background-color: #F62459;
+  border-color: #F62459;
+}
+
+.block-six:hover .icon, .block-six:hover .btn {
+  color: #F62459;
+  background-color: #fff;
+  border-color: #fff;
+}
