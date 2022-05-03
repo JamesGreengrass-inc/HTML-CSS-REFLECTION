@@ -1,0 +1,94 @@
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Latest Article Styles
+==================================== */
+.latest-articles,
+.bar {
+  box-shadow: 0 5px 35px #0000001a;
+}
+
+.bar-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .bar-container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bar-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .bar-container {
+    width: 1200px;
+  }
+}
+
+.bar-container:before,
+.bar-container:after,
+.bar ul li:after {
+  content: "";
+  display: table;
+}
+
+.bar-container:after,
+.bar ul li:after {
+  clear: both;
+}
+
+.bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar ul li {
+  line-height: 24px;
+  float: left;
+  padding: 0;
+}
+
+.bar ul li span {
+  display: block;
+  padding: 40px 0;
+  color: #333645;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.bar ul li span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+  height: 5px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.article-list-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.ar {
+  border-top: 0px;
+  border-radius: 0 0 3px 3px;
+}

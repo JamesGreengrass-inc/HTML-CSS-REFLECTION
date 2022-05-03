@@ -7,6 +7,10 @@
         <!-- Normalize and CSS stylesheets -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -122,12 +126,9 @@
         </div>
         <!-- HTML for banner -->
         <div id="banner">
-            <div class="text-banner">
-                <img src="assets/img/home-sqvx.webp" class="img-cover-modern">
+            <div class="text-image">
                 <div class="text">
-                    <div class="h1">
-                        Bespoke Software
-                    </div>
+                    <h1>Bespoke Software</h1>
                     <p>
                         Bring your business together
                         <br>
@@ -142,70 +143,138 @@
             </div>
         </div>
         <!-- HTML for middle -->
-        <div class="middle">
-            <section class="service">
-                <div class="middle-background">
-                    <div class="middle-flex">
-                        <div class="sc-container">
-                            <div class="sc-grid-one">
-                                <a href="#" class="block block-one">
-                                    <span class="icon btn-soft">
-                                        <span class="icon-apps"></span>
+        <div id="middle">
+            <!-- HTML for service cards -->
+            <section>
+                <div class="sc-container">
+                    <a href="#" class="block block-one">
+                        <span class="icon btn-soft">
+                            <span class="icon-apps"></span>
+                        </span>
+                        <h2>Bespoke Software</h2>
+                        <p>Tailored software solutions to improve business productivity and online profits. Our expert team will ensure a software solution.</p>
+                        <span class="btn btn-soft">Read More</span>
+                    </a>
+                    <a href="#" class="block block-two">
+                        <span class="icon btn-s-two">
+                            <span class="icon-monitor"></span>
+                        </span>
+                        <h2>IT Support</h2>
+                        <p>Remotely managed it services catered to your businesses needs, adds value and reduces costs.</p>
+                        <span class="btn btn-s-two">Read More</span>
+                    </a>
+                    <a href="#" class="block block-three">
+                        <span class="icon btn-dm">
+                            <span class="icon-bars"></span>
+                        </span>
+                        <h2>Digital Marketing</h2>
+                        <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monitor online performances.</p>
+                        <span class="btn btn-dm">Read More</span> 
+                    </a>
+                    <a href="#" class="block block-four">
+                        <span class="icon btn-t">
+                            <span class="icon-phone_in_talk"></span>
+                        </span>
+                        <h2>Telecoms Services</h2>
+                        <p>Stay connected with bespoke telecoms solutions when you need it most.</p>
+                        <span class="btn btn-t">Read More</span>
+                    </a>
+                    <a href="#" class="block block-five">
+                        <span class="icon btn-wd">
+                            <span class="icon-code"></span>
+                        </span>
+                        <h2>Web Design</h2>
+                        <p>User-centric design for businesses looking to make a lasting first impression.</p>
+                        <span class="btn btn-wd">Read More</span>
+                    </a>
+                    <a href="#" class="block block-six">
+                        <span class="icon btn-cs">
+                            <span class="icon-security"></span>
+                        </span>
+                        <h2>Cyber Security</h2>
+                        <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
+                        <span class="btn btn-cs">Read More</span>
+                    </a>
+                    <a href="#" class="block block-seven">
+                        <span class="icon btn-dt">
+                            <span class="icon-school"></span>
+                        </span>
+                        <h2>Developer Training</h2>
+                        <p>Have you considered a career in web development but you aren't sure where to start?</p>
+                        <span class="btn btn-dt">Read More</span>
+                    </a>
+                </div>
+            </section>
+            <!-- HTML for brand section -->
+            <section>
+                <div class="brand-bg">
+                    <div class="brand-container">
+                        <div class="brand-text">
+                            <h1>Netmatters</h1>
+                            <p>
+                                <b>
+                                    Netmatters Ltd is a leading web design, IT support and digital marketing agency based
+                                    in the East of England with offices in Cambridge, Wymondham and Great Yarmouth.
+                                </b>
+                            </p>
+                            <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects,
+                                nurture existing leads and further grow their sales.</p>
+                            <p>We provide cost effective, reliable solutions to a range of services; from bespoke
+                                cloud-based management systems, workflow and IT solutions through to creative website 
+                                development and integrated digital campaigning.</p>
+                            <a href="#" class="btn btn-oc">
+                                Our Culture 
+                                <span class="icon-arrow-right">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HTML for latest articles -->
+            <section>
+                <div class="latest-articles">
+                    <div class="bar">
+                        <div class="bar-container">
+                            <ul>
+                                <li class="active">
+                                    <span>
+                                        Latest
                                     </span>
-                                    <h2>Bespoke Software</h2>
-                                    <p>Tailored software solutions to improve business productivity and online profits. Our expert team will ensure a software solution.</p>
-                                    <span class="btn btn-soft">Read More</span>
-                                </a>
-                                <a href="#" class="block block-two">
-                                    <span class="icon btn-s-two">
-                                        <span class="icon-monitor"></span>
-                                    </span>
-                                    <h2>IT Support</h2>
-                                    <p>Remotely managed it services catered to your businesses needs, adds value and reduces costs.</p>
-                                    <span class="btn btn-s-two">Read More</span>
-                                </a>
-                                <a href="#" class="block block-three">
-                                    <span class="icon btn-dm">
-                                        <span class="icon-bars"></span>
-                                    </span>
-                                    <h2>Digital Marketing</h2>
-                                    <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monitor online performances.</p>
-                                    <span class="btn btn-dm">Read More</span> 
-                                </a>
-                            </div>
-                            <div class="sc-grid-two">
-                                <a href="#" class="block block-four">
-                                    <span class="icon btn-t">
-                                        <span class="icon-phone_in_talk"></span>
-                                    </span>
-                                    <h2>Telecoms Services</h2>
-                                    <p>Stay connected with bespoke telecoms solutions when you need it most.</p>
-                                    <span class="btn btn-t">Read More</span>
-                                </a>
-                                <a href="#" class="block block-five">
-                                    <span class="icon btn-wd">
-                                        <span class="icon-code"></span>
-                                    </span>
-                                    <h2>Web Design</h2>
-                                    <p>User-centric design for businesses looking to make a lasting first impression.</p>
-                                    <span class="btn btn-wd">Read More</span>
-                                </a>
-                                <a href="#" class="block block-six">
-                                    <span class="icon btn-cs">
-                                        <span class="icon-security"></span>
-                                    </span>
-                                    <h2>Cyber Security</h2>
-                                    <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
-                                    <span class="btn btn-cs">Read More</span>
-                                </a>
-                                <a href="#" class="block block-seven">
-                                    <span class="icon btn-dt">
-                                        <span class="icon-school"></span>
-                                    </span>
-                                    <h2>Developer Training</h2>
-                                    <p>Have you considered a career in web development but you aren't sure where to start?</p>
-                                    <span class="btn btn-dt">Read More</span>
-                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="bar-container">
+                            <div class="article-list-flex">
+                                <div class="article-list">
+                                    <div class="article-box block ar">
+                                        <div class="article">
+                                            <img>
+                                            <h3>
+                                                <a href="#">SCS Graduates March 2022</a>
+                                            </h3>
+                                            <p>
+                                                At Netmatters we found that there was a growing gap in the tech industry for talented individuals. W...
+                                            </p>
+                                            <a class="btn btn-wd" href="#">
+                                                Read More
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="article-box block ar">
+                                        <div class="article">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="article-box block ar">
+                                        <div class="article">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -171,33 +171,95 @@
 /* ================================= 
   Mixins - Mixins.scss
 ==================================== */
+/* ---- Banner Specific Styles ---- */
+.text-image {
+  position: relative;
+  background-image: linear-gradient(285deg, transparent 25%, black), url(../../assets/img/home-sqvx.webp);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: clip;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  height: inherit;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  z-index: 2;
+}
+
+@media screen and (min-width: 992px) {
+  .text {
+    align-items: baseline;
+    margin-left: 16px;
+  }
+}
+
+.text > * {
+  color: #fff;
+}
+
+.text h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.text p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  margin: 0 0 35px;
+}
+
+.btn-software {
+  color: #fff;
+  background-color: #67809F;
+  border-color: #67809F;
+}
+
+.btn-software:hover {
+  color: #fff;
+  background-color: #566C88;
+  border-color: #566C88;
+}
+
+.icon-arrow-right {
+  line-height: 56px;
+  vertical-align: middle;
+}
+
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
 /* ================================= 
             Service Card Styles
 ==================================== */
 /* ---- Middle Specific Styles ---- */
-.service {
-  position: relative;
-  z-index: 1;
-}
-
-.middle-background {
-  background-color: white;
-}
-
-.middle-flex {
+.sc-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.sc-container {
-  padding: 30px 15px 50px 15px;
+  padding: 30px 15px 30px 15px;
+  row-gap: 30px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .sc-container {
     width: 750px;
+    column-gap: 30px;
   }
 }
 
@@ -213,39 +275,10 @@
   }
 }
 
-.sc-grid-one {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-@media screen and (min-width: 992px) {
-  .sc-grid-one {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 30px;
-  }
-}
-
-.sc-grid-two {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-@media screen and (min-width: 768px) {
-  .sc-grid-two {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-  }
-}
-
-@media screen and (min-width: 1260px) {
-  .sc-grid-two {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
+.sc-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .block {
@@ -255,9 +288,30 @@
   padding: 30px;
   box-shadow: 0 3px 35px #0000001a;
   text-decoration: none;
-  margin-top: 30px;
   text-align: center;
   width: 100%;
+}
+
+.sc-container a .btn {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-four, .block-five,
+  .block-six, .block-seven {
+    width: 47.9%;
+    float: left;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .block-four, .block-five,
+  .block-six, .block-seven {
+    width: 22.6%;
+  }
 }
 
 .block .icon {
@@ -276,6 +330,7 @@
   padding-bottom: 17px;
   margin-top: 0px;
   margin-bottom: 11px;
+  font-size: 1.125rem;
 }
 
 .block h2:after {
@@ -293,11 +348,21 @@
 
 .block p {
   margin-bottom: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
 }
 
 .block .icon span {
   font-size: 23px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 992px) {
+  .block-one, .block-two,
+  .block-three {
+    width: 31.1%;
+    margin: 0 auto;
+  }
 }
 
 .btn-soft {
@@ -418,6 +483,166 @@
 }
 
 /* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Brand Section Styles
+==================================== */
+.brand-bg {
+  background-color: #333645;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .brand-bg {
+    background-image: url(../../assets/img/logo-background.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  }
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand-container {
+  padding: 50px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-container {
+    width: 750px;
+    padding-right: 20rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .brand-container {
+    width: 970px;
+    padding-right: 25rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .brand-container {
+    width: 1200px;
+    padding-right: 35rem;
+  }
+}
+
+.brand-text h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin: 0 0 28px;
+  text-transform: uppercase;
+}
+
+.btn-oc {
+  color: #333645;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Latest Article Styles
+==================================== */
+.latest-articles,
+.bar {
+  box-shadow: 0 5px 35px #0000001a;
+}
+
+.bar-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .bar-container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bar-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .bar-container {
+    width: 1200px;
+  }
+}
+
+.bar-container:before,
+.bar-container:after,
+.bar ul li:after {
+  content: "";
+  display: table;
+}
+
+.bar-container:after,
+.bar ul li:after {
+  clear: both;
+}
+
+.bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar ul li {
+  line-height: 24px;
+  float: left;
+  padding: 0;
+}
+
+.bar ul li span {
+  display: block;
+  padding: 40px 0;
+  color: #333645;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.bar ul li span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+  height: 5px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.article-list-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.ar {
+  border-top: 0px;
+  border-radius: 0 0 3px 3px;
+}
+
+/* ================================= 
   Base Page Styles - Styles.scss
 ==================================== */
 html {
@@ -456,7 +681,7 @@ html {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
   color: #666;
@@ -526,6 +751,11 @@ p {
 p {
   line-height: 1.875rem;
   margin-bottom: 25px;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 /* ---- Header Specific Styles ---- */
@@ -903,7 +1133,7 @@ p {
 }
 
 .main-navigation .main-nav-container > ul > li.software > a > span {
-  color: #67809f;
+  color: #67809F;
 }
 
 .main-navigation .main-nav-container > ul > li.it > a > span {
@@ -911,99 +1141,11 @@ p {
 }
 
 .main-navigation .main-nav-container > ul > li.digital > a > span {
-  color: #2ecc71;
+  color: #2ECC71;
 }
 
 .main-navigation .main-nav-container > ul > li > a > small {
   display: block;
   font-size: .625rem;
   padding-bottom: 1px;
-}
-
-/* ---- Banner Specific Styles ---- */
-.text-banner {
-  position: relative;
-  background: linear-gradient(270deg, transparent 25%, black);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.img-cover-modern {
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  opacity: .6;
-  z-index: 3;
-}
-
-@media screen and (max-width: 992px) {
-  .img-cover-modern {
-    opacity: .3;
-  }
-}
-
-.text-banner > * {
-  color: #fff;
-}
-
-@media screen and (max-width: 991px) {
-  .text-banner > * {
-    text-align: center;
-  }
-}
-
-.text-banner > * .h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin: 0 0 25px;
-  color: #fff;
-}
-
-.text-banner > * p {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
-  margin: 0 0 35px;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 4;
-}
-
-@media screen and (min-width: 992px) {
-  .text {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding-left: 20px;
-    align-items: baseline;
-  }
-}
-
-.btn-software {
-  color: #fff;
-  background-color: #67809f;
-  border-color: #67809f;
-}
-
-.btn-software:hover {
-  color: #fff;
-  background-color: #566C88;
-  border-color: #566C88;
-}
-
-.icon-arrow-right {
-  line-height: 56px;
-  vertical-align: middle;
 }
