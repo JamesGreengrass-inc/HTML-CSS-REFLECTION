@@ -25,7 +25,10 @@
         'partials/banner.scss',
         'partials/service-cards.scss',
         'partials/brand.scss',
-        'partials/latest-articles.scss';
+        'partials/latest-articles.scss',
+        'partials/clients-small.scss',
+        'partials/newsletter.scss',
+        'partials/footer.scss';
 
 /* ================================= 
   Base Page Styles - Styles.scss
@@ -122,7 +125,7 @@ a {
 }
 
 a {
-  color: #333645;
+  color: $bgcolorprimary;
   text-decoration: none;
 }
 
@@ -286,8 +289,8 @@ h2 {
   white-space: normal;
   height: 56px;
   color: $white;
-  background-color: #333645;
-  border-color: #333645;
+  background-color: $bgcolorprimary;
+  border-color: $bgcolorprimary;
   margin-left: 20px;
 }
 
@@ -298,8 +301,14 @@ h2 {
 
 .btn-primary {
   color: $white;
-  background-color: #333645;
-  border-color: #333645;
+  background-color: $bgcolorprimary;
+  border-color: $bgcolorprimary;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $dprimary;
+  border-color: $dprimary;
 }
 
 .hamburger {
@@ -317,8 +326,8 @@ h2 {
 
 .btn.hamburger.btn-primary {
   color: $white;
-  background-color: #333645;
-  border-color: #333645;
+  background-color: $bgcolorprimary;
+  border-color: $bgcolorprimary;
 }
 
 .btn.hamburger.btn-primary:hover {
@@ -439,7 +448,7 @@ h2 {
 /* ---- Main Navigation Specific Styles ---- */
 
 .main-navigation {
-  background-color: #333645;
+  background-color: $bgcolorprimary;
   height: 99.01px;
   width: 100%;
   @include mQMax(992px) {

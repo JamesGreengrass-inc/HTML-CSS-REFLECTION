@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -248,30 +248,90 @@
                     <div class="section">
                         <div class="bar-container">
                             <div class="article-list-flex">
-                                <div class="article-list">
-                                    <div class="article-box block ar">
-                                        <div class="article">
-                                            <img>
-                                            <h3>
-                                                <a href="#">SCS Graduates March 2022</a>
-                                            </h3>
-                                            <p>
-                                                At Netmatters we found that there was a growing gap in the tech industry for talented individuals. W...
-                                            </p>
-                                            <a class="btn btn-wd" href="#">
-                                                Read More
-                                            </a>
-
+                                <div class="article-box" id="abox-one">
+                                    <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                    <img src="assets/img/scs-graduates-march-e5Cg.webp" alt="SCS Graduates March">
+                                    <div class="article block ar">
+                                        <h3>
+                                            <a href="#">SCS Graduates March 2022</a>
+                                        </h3>
+                                        <p>
+                                            At Netmatters we found that there was a growing gap in the tech industry for talented individuals. W...
+                                        </p>
+                                        <a class="btn btn-wd" href="#">
+                                            Read More
+                                        </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                            </div>
+                                            <div class="details">
+                                                <p>
+                                                    <b class="d-text">
+                                                        Posted by Netmatters Ltd
+                                                    </b>
+                                                    <br>
+                                                    7th April 2022
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="article-box block ar">
-                                        <div class="article">
-                                            
+                                </div>
+                                <div class="article-box" id="abox-two">
+                                    <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                    <img src="assets/img/march-notables-2022-1R6Z.webp" alt="March Notables 2022">
+                                    <div class="article block ar">
+                                        <h3>
+                                            <a href="#">March Notables 2022</a>
+                                        </h3>
+                                        <p>
+                                            Every month, we take great pleasure in celebrating the success of our notable employees. Across all...
+                                        </p>
+                                        <a class="btn btn-wd" href="#">
+                                            Read More
+                                        </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                            </div>
+                                            <div class="details">
+                                                <p>
+                                                    <b class="d-text">
+                                                        Posted by Netmatters Ltd
+                                                    </b>
+                                                    <br>
+                                                    6th April 2022
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="article-box block ar">
-                                        <div class="article">
-                                            
+                                </div>
+                                <div class="article-box" id="abox-three">
+                                    <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                    <img src="assets/img/jimmy-wright-achieves-86HD.webp" alt="Jimmy Wright Article">
+                                    <div class="article block ar">
+                                        <h3>
+                                            <a href="#">Jimmy Wright Achieves The Long Service Award</a>
+                                        </h3>
+                                        <p>
+                                            From Trainee to Legend... We feel it is important to congratulate our team...
+                                        </p>
+                                        <a class="btn btn-wd" href="#">
+                                            Read More
+                                        </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                            </div>
+                                            <div class="details">
+                                                <p>
+                                                    <b class="d-text">
+                                                        Posted by Netmatters Ltd
+                                                    </b>
+                                                    <br>
+                                                    4th April 2022
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +340,165 @@
                     </div>
                 </div>
             </section>
+            <!-- HTML for the smaller section containing logos of clients -->
+            <section class="sc-logos">
+                <div class="section bar-container">
+                    <div class="small-client-flex">
+                        <div class="sc-item">
+                            <img src="assets/img/busseys-greyscale.jpg">
+                        </div>
+                        <div class="sc-item">
+                            <img src="assets/img/crane-greyscale.jpg">
+                        </div>
+                        <div class="sc-item">
+                            <img src="assets/img/charity-greyscale.jpg">
+                        </div>
+                        <div class="sc-item">
+                            <img src="assets/img/northern-diver-greyscale.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HTML for the newsletter -->
+            <section>
+                <div class="newsletter-bg">
+                    <div class="bar-container">
+                        <form method="POST" action="#" accept-charset="UTF-8" id="sign-up" class="sign-up">
+                            <h2>Email Newsletter Sign-Up</h2>
+                            <div class="sign-up-inputs">
+                                <div class="sign-up-input">
+                                    <div class="form-group">
+                                        <label for="newsletter-name">
+                                            Your Name
+                                        </label>
+                                        <input class="form-control" id="newsletter-name" name="name" type="text">
+                                    </div>
+                                </div>
+                                <div class="sign-up-input">
+                                    <div class="form-group">
+                                        <label for="newsletter-email">
+                                            Your Email
+                                        </label>
+                                        <input class="form-control" id="newsletter-email" name="email" type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="pretty-checkbox">
+                                    <span class="media">
+                                        <span class="media-left checkbox-left">
+                                            <span class="button"></span>
+                                        </span>
+                                        <span class="media-body">
+                                            Please tick this box if you wish to receive marketing information from us. 
+                                            Please see our
+                                            <a href="#" target="_blank">Privacy Policy</a>
+                                            for more information on how we use your data.
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <button name="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
+        <footer>
+            <div class="bar-container">
+                <div class="footer-row">
+                    <div class="services">
+                        <div class="service">
+                            <h4>About Netmatters</h4>
+                            <ul>
+                                <li>News</li>
+                                <li>Our Careers</li>
+                                <li>Our Team</li>
+                                <li>Privacy Policy</li>
+                                <li>Cookie Policy</li>
+                                <li>Terms & Conditions</li>
+                                <li>Environmental Policy</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                        <div class="service">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li>Bespoke Software</li>
+                                <li>IT Support</li>
+                                <li>Digital Marketing</li>
+                                <li>Telecoms Services</li>
+                                <li>Web Design</li>
+                                <li>Cyber Security</li>
+                                <li>Developer Training</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offices">
+                        <div class="office">
+                            <h4>Cambridge Office</h4>
+                            <ul>
+                                <li>Unit 1.28,</li>
+                                <li>St John's Innovation Centre,</li>
+                                <li>Cowley Road, Milton,</li>
+                                <li>Cambridge,</li>
+                                <li>CB4 0WS</li>
+                                <li>&nbsp;</li>
+                                <li>
+                                    Tel:
+                                    <a href="#">01223 37 57 72</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="office">
+                            <h4>Wymondham Office</h4>
+                            <ul>
+                                <li>Unit 15,</li>
+                                <li>Penfold Drive,</li>
+                                <li>Gateway 11 Business Park,</li>
+                                <li>Wymondham, Norfolk,</li>
+                                <li>NR18 0WZ</li>
+                                <li>&nbsp;</li>
+                                <li>Tel:
+                                    <a href="#">01603 70 40 20</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="office">
+                            <h4>Great Yarmouth Office</h4>
+                            <ul>
+                                <li>Suite F23,</li>
+                                <li>Beacon Innovation Centre,</li>
+                                <li>Beacon Park, Gorleston,</li>
+                                <li>Great Yarmouth, Norfolk,</li>
+                                <li>NR31 7RA</li>
+                                <li>&nbsp;</li>
+                                <li>
+                                    Tel:
+                                    <a href="#">01493 60 32 04</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="license">
+                    © Copyright Netmatters Ltd. 2022.
+                    <br class="visible-xs">
+                    All rights reserved.
+                    <span>-</span>
+                    <ul>
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    
+                </div>
+            </div>
+        </footer>
     </body>
 
 </html>
