@@ -61,4 +61,9 @@
   color: #333645;
   background-color: #fff;
   border-color: #fff;
+  padding: 0 15px;
+}
+
+.btn-oc:hover {
+  background-color: #EBEBEB;
 }

@@ -30,6 +30,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: inherit;
@@ -40,6 +41,7 @@
   .text {
     align-items: baseline;
     margin-left: 16px;
+    text-align: left;
   }
 }
 
@@ -52,12 +54,20 @@
   font-size: 3rem;
   font-weight: 400;
   margin: 0 0 25px;
+  text-align: center;
 }
 
 .text p {
   font-size: 1.25rem;
   line-height: 2.25rem;
   margin: 0 0 35px;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .text p {
+    text-align: left;
+  }
 }
 
 .btn-software {

@@ -58,6 +58,31 @@ footer ul li:hover {
     text-decoration: underline;
 }
 
+.footer-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mQ(768px) {
+      width: 750px;
+    }
+    @include mQ(992px) {
+      width: 970px;
+    }
+    @include mQ(1260px) {
+      width: 1200px;
+    }
+}
+
+.footer-container:before, 
+.footer-container:after {
+    display: table;
+}
+
+.footer-container:after {
+    clear: both;
+}
+
 footer .bottom {
     display: flex;
     justify-content: space-between;

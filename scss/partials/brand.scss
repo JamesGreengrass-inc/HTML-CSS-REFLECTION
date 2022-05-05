@@ -48,11 +48,14 @@
     text-transform: uppercase;
 }
 
-.brand-text p {
-}
 
 .btn-oc {
     color: $bgcolorprimary;
     background-color: $white;
     border-color: $white;
+    padding: 0 15px;
+}
+
+.btn-oc:hover {
+    background-color: #EBEBEB;
 }

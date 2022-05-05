@@ -7,9 +7,6 @@
             Service Card Styles
 ==================================== */
 
-
-/* ---- Middle Specific Styles ---- */
-
 .sc-container {
     display: flex;
     flex-direction: row;
@@ -93,7 +90,7 @@
     width: 28px;
     height: 3px;
     display: block;
-    background-color: #333645;
+    background-color: $bgcolorprimary;
 }
 
 .block p {
@@ -161,7 +158,8 @@
     color: $white;
     background-color: $dgrey;
     border-color: $dgrey;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $dgrey;
       background-color: $white;
       border-color: $white;
@@ -172,7 +170,8 @@
     color: $white;
     background-color: $blue;
     border-color: $blue;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $blue;
       background-color: $white;
       border-color: $white;
@@ -183,7 +182,8 @@
     color: $white;
     background-color: $green;
     border-color: $green;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $green;
       background-color: $white;
       border-color: $white;
@@ -194,7 +194,8 @@
     color: $white;
     background-color: $red;
     border-color: $red;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $red;
       background-color: $white;
       border-color: $white;
@@ -206,7 +207,8 @@
     color: $white;
     background-color: $purple;
     border-color: $purple;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $purple;
       background-color: $white;
       border-color: $white;
@@ -217,7 +219,8 @@
     color: $white;
     background-color: $pink;
     border-color: $pink;
-    .icon, .btn {
+    .icon, .btn, 
+    h2:after {
       color: $pink;
       background-color: $white;
       border-color: $white;

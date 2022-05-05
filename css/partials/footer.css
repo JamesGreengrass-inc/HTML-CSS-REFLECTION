@@ -63,6 +63,40 @@ footer ul li:hover {
   text-decoration: underline;
 }
 
+.footer-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .footer-container {
+    width: 1200px;
+  }
+}
+
+.footer-container:before,
+.footer-container:after {
+  display: table;
+}
+
+.footer-container:after {
+  clear: both;
+}
+
 footer .bottom {
   display: flex;
   justify-content: space-between;
