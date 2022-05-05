@@ -4,6 +4,13 @@
 
 /* ---- Banner Specific Styles ---- */
 
+#banner {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
 .text-image {
     position: relative;
     background-image: linear-gradient(285deg,transparent 25%,rgb(0, 0, 0)), url(../../assets/img/home-sqvx.webp);

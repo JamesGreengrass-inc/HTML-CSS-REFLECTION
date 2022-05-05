@@ -98,3 +98,30 @@ footer .bottom .license span {
 footer ul li a {
   color: #fff;
 }
+
+footer .bottom .social-media {
+  display: flex;
+  justify-content: flex-end;
+  font-size: .9rem;
+  margin-top: -5px;
+}
+
+footer .bottom .social-media a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 10px 10px;
+  border-radius: 50%;
+  max-height: 38px;
+}
+
+footer .bottom .social-media a span {
+  position: relative;
+  top: 4px;
+  color: #fff;
+}
+
+.icon-indeed:before {
+  color: #fff;
+}

@@ -1,0 +1,84 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Accreditations Styles
+==================================== */
+
+.main-navigation {
+  background-color: $bgcolorprimary;
+  @include mQMax(992px) {
+    display: none;
+  }
+}
+
+.main-navigation .bar-container > ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid hsla(0,0%,100%,.1);
+  border-right: 1px solid rgba(0,0,0,.25);
+}
+
+.main-navigation .bar-container > ul > li {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid hsla(0,0%,100%,.1);
+  border-left: 1px solid rgba(0,0,0,.25);
+}
+  
+.main-navigation .bar-container > ul > li > a {
+  position: relative;
+  display: block;
+  color: $white;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1;
+}
+  
+.main-navigation .bar-container > ul > li > a > span {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.438rem;
+}
+
+.main-navigation .bar-container > ul > li > a small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: .625rem;
+}
+
+.main-navigation .bar-container > ul > li.software > a > span {
+  color: $dgrey;
+}
+  
+.main-navigation .bar-container > ul > li.it > a > span {
+  color: $blue;
+}
+  
+.main-navigation .bar-container > ul > li.digital > a > span {
+  color: $green;
+}
+
+.main-navigation .bar-container > ul > li.telecoms > a > span {
+  color: $red;
+}
+
+.main-navigation .bar-container > ul > li.web > a > span {
+  color: $purple;
+}
+
+.main-navigation .bar-container > ul > li.security > a > span {
+  color: $pink;
+}
+
+.main-navigation .bar-container > ul > li.developer-course > a > span {
+  color: $purple;
+}
