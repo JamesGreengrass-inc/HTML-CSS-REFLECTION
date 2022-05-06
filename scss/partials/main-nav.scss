@@ -84,7 +84,11 @@
 
 .main-navigation .bar-container > ul > li > ul:before {
   right: 100%;
-  width: 50%;
+  width: 2000px;
+}
+
+.main-navigation .bar-container > ul > li > ul:after {
+  clear: both;
 }
 
 .main-navigation .bar-container > ul > li > ul:after {
