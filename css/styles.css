@@ -793,13 +793,6 @@ h2 {
   }
 }
 
-.article-box img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
 .article-box > .category {
   position: absolute;
   color: #fff;
@@ -816,6 +809,32 @@ h2 {
 
 .article-box .category:hover {
   text-decoration: underline;
+}
+
+.article-box img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.img-hover-zoom {
+  height: auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .img-hover-zoom a img {
+    transition: transform .25s ease;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 
 .ar {
@@ -904,9 +923,70 @@ h2 {
     padding: 0 20px;
     position: relative;
   }
+  .sc-item .description {
+    display: none;
+    position: absolute;
+    bottom: 172%;
+    left: -200px;
+    right: -200px;
+  }
+  .sc-item:hover .description {
+    display: block;
+  }
+  .sc-item .description .box {
+    background-color: #333645;
+    color: #fff;
+    padding: 20px;
+    font-size: .875rem;
+    max-width: 260px;
+    margin: 0 auto 5px;
+  }
+  .sc-item .description .box .arrow {
+    position: absolute;
+    bottom: -30px;
+    left: 44%;
+    margin-left: -36px;
+  }
+  .sc-item .description .box h3 {
+    font-weight: 400;
+    position: relative;
+    font-size: 1.125rem;
+    color: #fff;
+    padding-bottom: 17px;
+    margin: 0 0 11px;
+  }
+  .sc-item .description .box h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 28px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+  }
+  .sc-item .description .box p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 0;
+  }
+  .sc-item .description .box .arrow {
+    content: "";
+    margin: auto;
+    display: inline-block;
+    border-color: #333645 transparent transparent;
+    border-style: solid;
+    border-width: 35px 36px 0;
+  }
   .sc-item img {
     max-width: 100%;
     height: auto;
+    filter: grayscale(100%);
+  }
+  .sc-item:hover img {
+    filter: grayscale(0);
   }
 }
 
@@ -955,6 +1035,10 @@ label {
   display: inline-block;
   font-weight: 600;
   color: #333645;
+}
+
+.required {
+  color: #d24d57;
 }
 
 .form-control, output {
@@ -1186,6 +1270,28 @@ footer .bottom .social-media a span {
   color: #fff;
 }
 
+.social-media a:hover {
+  background-color: red;
+  border-radius: 50%;
+  padding: 7px 10px 10px 10px;
+}
+
+#fb:hover {
+  background-color: #3B5998;
+}
+
+#tw:hover {
+  background-color: #00ACED;
+}
+
+#ig:hover {
+  background-color: #D93175;
+}
+
+#in:hover {
+  background-color: #0077B5;
+}
+
 /* ================================= 
   Mixins - Mixins.scss
 ==================================== */
@@ -1222,6 +1328,15 @@ footer .bottom .social-media a span {
   .accreditations .list .item img {
     height: auto;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list .item img {
+    filter: grayscale(100%);
+  }
+  .list .item:hover img {
+    filter: grayscale(0);
   }
 }
 

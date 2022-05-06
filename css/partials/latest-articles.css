@@ -130,13 +130,6 @@
   }
 }
 
-.article-box img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
 .article-box > .category {
   position: absolute;
   color: #fff;
@@ -153,6 +146,32 @@
 
 .article-box .category:hover {
   text-decoration: underline;
+}
+
+.article-box img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.img-hover-zoom {
+  height: auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .img-hover-zoom a img {
+    transition: transform .25s ease;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 
 .ar {

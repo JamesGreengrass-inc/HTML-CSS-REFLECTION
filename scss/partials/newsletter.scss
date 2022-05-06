@@ -48,6 +48,10 @@ label {
     color: $bgcolorprimary;
 }
 
+.required {
+    color: #d24d57;
+}
+
 .form-control, output {
     display: block;
     font-size: 14px;

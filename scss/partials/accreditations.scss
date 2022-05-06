@@ -42,4 +42,12 @@
             width: 100%;
         }
     }
+
+    .list .item img {
+        filter: grayscale(100%);
+    }
+
+    .list .item:hover img {
+        filter: grayscale(0);
+    }
 }
