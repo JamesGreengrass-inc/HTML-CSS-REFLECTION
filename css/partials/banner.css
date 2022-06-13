@@ -4,7 +4,7 @@
 /* ---- Banner Specific Styles ---- */
 #banner {
   background-color: #000;
-  height: 100%;
+  height: 729px;
   width: 100%;
   z-index: 1;
 }
@@ -13,7 +13,7 @@
   position: relative;
   background-image: linear-gradient(285deg, transparent 25%, black), url(../../assets/img/home-sqvx.webp);
   width: 100%;
-  height: 100vh;
+  height: 729px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

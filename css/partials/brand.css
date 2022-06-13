@@ -25,28 +25,31 @@
 
 .brand-container {
   padding: 50px 15px;
-  margin: 0 auto;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .brand-container {
     width: 750px;
-    padding-right: 20rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .brand-container {
     width: 970px;
-    padding-right: 25rem;
   }
 }
 
 @media screen and (min-width: 1260px) {
   .brand-container {
     width: 1200px;
-    padding-right: 35rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .brand-text {
+    width: 50%;
   }
 }
 

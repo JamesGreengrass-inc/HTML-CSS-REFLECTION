@@ -45,7 +45,7 @@
 }
 
 #logo-a {
-  margin-right: 111px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,6 +74,7 @@
   border-color: #4183d7;
   color: #fff;
   line-height: 46px;
+  height: 56px;
 }
 
 .btn-c {
@@ -82,6 +83,7 @@
   color: #fff;
   line-height: 46px;
   margin: 0px 20px;
+  height: 56px;
 }
 
 .btn-s:hover {
@@ -136,12 +138,21 @@
   }
 }
 
+.search-bar-input:focus {
+  border-color: #5BC0DE;
+  outline: none;
+  box-shadow: 0 0 5px #5BC0DE;
+  border: 1px solid #5BC0DE;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .search-bar-button {
   outline: none;
   padding: 7px 20px 3px;
   height: 56px;
   font-size: 1.063rem;
-  border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   border: none;
   vertical-align: bottom;
   background-color: #999aa2;
@@ -236,8 +247,9 @@
   text-transform: none;
   background-color: transparent;
   border: 0;
-  margin: 0 0 0 20px;
+  margin: 0 10px 0 20px;
   overflow: visible;
+  height: 56px;
 }
 
 .btn.hamburger.btn-primary {

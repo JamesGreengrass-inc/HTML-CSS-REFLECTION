@@ -84,7 +84,10 @@
     row-gap: 30px;
     margin: 0 auto;
     @include mQ(768px) {
-        column-gap: 30px;
+        column-gap: 56px;
+    }
+    @include mQ(1260px) {
+        column-gap: 40px;
     }
 }
 

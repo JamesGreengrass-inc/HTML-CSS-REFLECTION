@@ -25,22 +25,24 @@
 
 .brand-container {
     padding: 50px 15px;
-    margin: 0 auto;
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     @include mQ(768px) {
         width: 750px;
-        padding-right: 20rem;
     }
     @include mQ(992px) {
         width: 970px;
-        padding-right: 25rem;
     }
     @include mQ(1260px) {
         width: 1200px;
-        padding-right: 35rem;
     }
 }
 
+.brand-text {
+    @include mQ(1260px) {
+        width: 50%;
+    }
+}
 .brand-text h1 {
     font-weight: 400;
     font-size: 2.25rem;

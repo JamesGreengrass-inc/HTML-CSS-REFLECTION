@@ -264,7 +264,7 @@ h2 {
 /* ---- Banner Specific Styles ---- */
 #banner {
   background-color: #000;
-  height: 100%;
+  height: 729px;
   width: 100%;
   z-index: 1;
 }
@@ -273,7 +273,7 @@ h2 {
   position: relative;
   background-image: linear-gradient(285deg, transparent 25%, black), url(../../assets/img/home-sqvx.webp);
   width: 100%;
-  height: 100vh;
+  height: 729px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,7 +357,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px 15px 30px 15px;
+  padding: 50px 15px 50px 15px;
   row-gap: 30px;
   margin: 0 auto;
 }
@@ -622,28 +622,31 @@ h2 {
 
 .brand-container {
   padding: 50px 15px;
-  margin: 0 auto;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .brand-container {
     width: 750px;
-    padding-right: 20rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .brand-container {
     width: 970px;
-    padding-right: 25rem;
   }
 }
 
 @media screen and (min-width: 1260px) {
   .brand-container {
     width: 1200px;
-    padding-right: 35rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .brand-text {
+    width: 50%;
   }
 }
 
@@ -760,7 +763,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .article-list-flex {
-    column-gap: 30px;
+    column-gap: 56px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .article-list-flex {
+    column-gap: 40px;
   }
 }
 
@@ -1067,6 +1076,14 @@ label {
   border-color: #ccc;
 }
 
+.form-control:focus {
+  border-color: #5BC0DE;
+  outline: none;
+  box-shadow: 0 0 5px #5BC0DE;
+  border: 1px solid #5BC0DE;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 label .pretty-checkbox {
   line-height: 32px;
   cursor: pointer;
@@ -1098,7 +1115,7 @@ label .pretty-checkbox {
   padding-right: 0;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   visibility: hidden;
   display: none;
 }
@@ -1672,7 +1689,7 @@ footer .bottom .social-media a span {
 }
 
 #logo-a {
-  margin-right: 111px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1701,6 +1718,7 @@ footer .bottom .social-media a span {
   border-color: #4183d7;
   color: #fff;
   line-height: 46px;
+  height: 56px;
 }
 
 .btn-c {
@@ -1709,6 +1727,7 @@ footer .bottom .social-media a span {
   color: #fff;
   line-height: 46px;
   margin: 0px 20px;
+  height: 56px;
 }
 
 .btn-s:hover {
@@ -1763,12 +1782,21 @@ footer .bottom .social-media a span {
   }
 }
 
+.search-bar-input:focus {
+  border-color: #5BC0DE;
+  outline: none;
+  box-shadow: 0 0 5px #5BC0DE;
+  border: 1px solid #5BC0DE;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .search-bar-button {
   outline: none;
   padding: 7px 20px 3px;
   height: 56px;
   font-size: 1.063rem;
-  border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   border: none;
   vertical-align: bottom;
   background-color: #999aa2;
@@ -1863,8 +1891,9 @@ footer .bottom .social-media a span {
   text-transform: none;
   background-color: transparent;
   border: 0;
-  margin: 0 0 0 20px;
+  margin: 0 10px 0 20px;
   overflow: visible;
+  height: 56px;
 }
 
 .btn.hamburger.btn-primary {

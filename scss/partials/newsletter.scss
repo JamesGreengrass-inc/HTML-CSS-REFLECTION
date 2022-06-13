@@ -74,6 +74,14 @@ label {
     border-color: $lgrey;
 }
 
+.form-control:focus {
+    border-color: #5BC0DE;
+    outline: none;
+    box-shadow: (0 0 5px #5BC0DE);
+    border: 1px solid #5BC0DE;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 label .pretty-checkbox {
     line-height: 32px;
     cursor: pointer;
@@ -105,7 +113,7 @@ label .pretty-checkbox {
     padding-right: 0;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
     visibility: hidden;
     display: none;
 }
